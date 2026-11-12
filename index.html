@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ちひとのポートフォリオ。授業で制作した作品や学んでいることを紹介しています。">
+  <title>ちひとのポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <a href="#top" class="site-name">Chihito's Portfolio</a>
+      <nav aria-label="ページ内メニュー">
+        <a href="#about">自己紹介</a>
+        <a href="#skills">スキル</a>
+        <a href="#works">作品</a>
+        <a href="#links">リンク</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div>
+        <p class="small-label">MY PORTFOLIO / 2026</p>
+        <h1>こんにちは、<br>ちひとです。</h1>
+        <p class="intro">大阪公立大学工業高等専門学校の2年生です。<br>授業で作ったものや、今勉強していることをまとめました。</p>
+        <a class="main-button" href="#works">作品を見る ↓</a>
+      </div>
+      <div class="hero-note">
+        <div class="memo-title">いま勉強していること</div>
+        <p>Python</p>
+        <p>HTML・CSS</p>
+        <p>Git・GitHub</p>
+        <span>まだまだ勉強中！</span>
+      </div>
+    </section>
+
+    <section id="about" class="section gray-section">
+      <div class="wrap">
+        <p class="small-label">01 / ABOUT</p>
+        <h2>自己紹介</h2>
+        <div class="about-box">
+          <div class="avatar" aria-hidden="true">C</div>
+          <div>
+            <h3>ちひと <span>（Chihito）</span></h3>
+            <p>大阪公立大学工業高等専門学校で情報やプログラミングを学んでいます。</p>
+            <p>プログラムを書いて動かしてみるのが好きです。うまくいかないことも多いですが、調べたり直したりしながら少しずつできることを増やしています。</p>
+            <p class="note">※ ここに自分の趣味や興味のあることを1〜2文追加すると、もっと自分らしいページになります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <p class="small-label">02 / SKILLS</p>
+        <h2>使ったことのあるもの</h2>
+        <p class="section-text">授業や課題で使った言語・ツールです。これからもっと慣れていきたいです。</p>
+        <div class="skills-grid">
+          <div class="skill-item"><h3>Python</h3><p>基本的な文法やプログラムの作成</p></div>
+          <div class="skill-item"><h3>HTML / CSS</h3><p>Webページの作成とデザイン</p></div>
+          <div class="skill-item"><h3>VS Code</h3><p>プログラムの編集</p></div>
+          <div class="skill-item"><h3>Git / GitHub</h3><p>ファイルの管理とWebページの公開</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section gray-section">
+      <div class="wrap">
+        <p class="small-label">03 / WORKS</p>
+        <h2>制作したもの</h2>
+        <p class="section-text">学校の課題や活動で取り組んだ作品を紹介します。</p>
+
+        <article class="work-card">
+          <div class="work-header">
+            <span class="work-number">WORK 01</span>
+            <h3>プログラミング課題04（Python）</h3>
+          </div>
+          <p>Pythonを使った自由制作の課題です。制作したプログラムについて紹介します。</p>
+          <dl class="work-details">
+            <div><dt>作ったもの</dt><dd>【ここに作品名を書く】</dd></div>
+            <div><dt>どんな作品？</dt><dd>【何ができるプログラムか、2〜3文で説明する】</dd></div>
+            <div><dt>工夫したこと</dt><dd>【自分で工夫したところを書く】</dd></div>
+            <div><dt>作品のリンク</dt><dd>【Google ColabやGitHubのURLをここに追加する】</dd></div>
+          </dl>
+          <h4>作品の画像</h4>
+          <div class="photo-grid">
+            <img src="assets/python-1.svg" alt="課題04の画像1（差し替え用）">
+            <img src="assets/python-2.svg" alt="課題04の画像2（差し替え用）">
+            <img src="assets/python-3.svg" alt="課題04の画像3（差し替え用）">
+            <img src="assets/python-4.svg" alt="課題04の画像4（差し替え用）">
+          </div>
+          <p class="replace-note">※ 画像4枚は仮のものです。自分の作品のスクリーンショットに変更してください。</p>
+        </article>
+
+        <article class="work-card">
+          <div class="work-header">
+            <span class="work-number">WORK 02</span>
+            <h3>高専祭での活動</h3>
+          </div>
+          <p>高専祭で取り組んだプロジェクトについて紹介します。</p>
+          <dl class="work-details">
+            <div><dt>プロジェクト名</dt><dd>【ここにプロジェクト名を書く】</dd></div>
+            <div><dt>活動内容</dt><dd>【何を作った・展示したかを書く】</dd></div>
+            <div><dt>自分の担当</dt><dd>【自分が担当したことを具体的に書く】</dd></div>
+            <div><dt>感想・学んだこと</dt><dd>【やってみて分かったことを書く】</dd></div>
+          </dl>
+          <h4>活動の写真</h4>
+          <div class="photo-grid">
+            <img src="assets/festival-1.svg" alt="高専祭の写真1（差し替え用）">
+            <img src="assets/festival-2.svg" alt="高専祭の写真2（差し替え用）">
+            <img src="assets/festival-3.svg" alt="高専祭の写真3（差し替え用）">
+            <img src="assets/festival-4.svg" alt="高専祭の写真4（差し替え用）">
+          </div>
+          <p class="replace-note">※ 写真4枚は仮のものです。自分の活動の写真に変更してください。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="links" class="section">
+      <div class="wrap link-section">
+        <p class="small-label">04 / LINKS</p>
+        <h2>リンク</h2>
+        <p>GitHubに制作したコードをまとめています。</p>
+        <a class="link-button" href="https://github.com/Chihito0501" target="_blank" rel="noopener noreferrer">GitHubを見る ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Chihito　|　Made for Programming 1</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Python 課題04の仮画像">
+<rect width="640" height="400" fill="#e9eef5"/>
+<rect x="24" y="24" width="592" height="352" rx="10" fill="#f9fbfe" stroke="#bac8d8" stroke-width="2" stroke-dasharray="10 8"/>
+<rect x="278" y="118" width="84" height="62" rx="6" fill="none" stroke="#7e96b6" stroke-width="5"/>
+<circle cx="302" cy="138" r="9" fill="#7e96b6"/>
+<path d="M289 164l19-21 19 21 11-11 14 11" fill="none" stroke="#7e96b6" stroke-width="4" stroke-linejoin="round"/>
+<text x="320" y="225" fill="#385582" font-family="sans-serif" font-size="27" font-weight="bold" text-anchor="middle">Python 課題04</text>
+<text x="320" y="264" fill="#73839b" font-family="sans-serif" font-size="21" text-anchor="middle">画像 2 を入れてください</text>
+</svg>

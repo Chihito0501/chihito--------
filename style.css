@@ -1,0 +1,88 @@
+/* サイト全体の設定 */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #243047;
+  background: #fff;
+  line-height: 1.8;
+}
+a { color: inherit; }
+.wrap { width: min(960px, 90%); margin: auto; }
+
+/* ヘッダー */
+header { background: #fff; border-bottom: 1px solid #dde4ed; }
+.header-inner { min-height: 76px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.site-name { font-weight: bold; font-size: 20px; text-decoration: none; color: #3157a2; }
+nav { display: flex; gap: 22px; flex-wrap: wrap; }
+nav a { font-size: 13px; text-decoration: none; }
+nav a:hover { color: #3157a2; text-decoration: underline; }
+
+/* トップ画面 */
+.hero { min-height: 430px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 50px; align-items: center; padding: 65px 0; }
+.small-label { color: #4264a7; font-size: 12px; font-weight: bold; letter-spacing: .1em; margin: 0 0 10px; }
+h1 { font-size: clamp(38px, 5vw, 60px); line-height: 1.4; margin: 0 0 20px; }
+.intro { margin-bottom: 28px; }
+.main-button, .link-button { display: inline-block; padding: 10px 22px; background: #3157a2; color: white; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: bold; }
+.main-button:hover, .link-button:hover { background: #23437f; }
+.hero-note { background: #f4f7fd; border: 2px solid #dce6f5; border-radius: 12px; padding: 28px 32px; transform: rotate(1.5deg); }
+.memo-title { font-weight: bold; border-bottom: 2px solid #b6c7e4; padding-bottom: 8px; margin-bottom: 14px; }
+.hero-note p { margin: 8px 0; padding-left: 15px; border-left: 4px solid #f0bf67; font-weight: bold; }
+.hero-note span { display: block; margin-top: 20px; font-size: 12px; color: #607089; text-align: right; }
+
+/* 共通の見出し・余白 */
+.section { padding: 78px 0; }
+.gray-section { background: #f5f7fa; }
+h2 { font-size: 30px; margin: 0 0 24px; border-left: 5px solid #edb75a; padding-left: 14px; }
+h3 { margin-top: 0; }
+.section-text { margin: -8px 0 30px; color: #5a677a; }
+
+/* 自己紹介 */
+.about-box { display: grid; grid-template-columns: 170px 1fr; gap: 32px; align-items: start; background: white; border: 1px solid #e1e6ef; border-radius: 10px; padding: 32px; }
+.avatar { width: 150px; height: 150px; border-radius: 50%; display: grid; place-items: center; background: #dce8fc; color: #3157a2; font-size: 72px; font-weight: bold; }
+.about-box h3 { font-size: 22px; margin: 0 0 10px; }
+.about-box h3 span { font-size: 14px; font-weight: normal; }
+.about-box p { margin: 0 0 13px; }
+.note { color: #7b8796; font-size: 12px; }
+
+/* スキル */
+.skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.skill-item { border: 1px solid #dde4ed; border-radius: 8px; padding: 20px 24px; }
+.skill-item h3 { color: #3157a2; font-size: 18px; margin-bottom: 5px; }
+.skill-item p { margin: 0; font-size: 14px; color: #5c687c; }
+
+/* 作品紹介 */
+.work-card { background: white; border: 1px solid #e0e5eb; border-radius: 10px; padding: 32px; margin-top: 24px; }
+.work-header { border-bottom: 1px solid #e5eaf1; padding-bottom: 16px; margin-bottom: 18px; }
+.work-number { font-size: 12px; font-weight: bold; color: #4264a7; }
+.work-header h3 { margin: 5px 0 0; font-size: 23px; }
+.work-details { margin: 26px 0; }
+.work-details > div { display: grid; grid-template-columns: 150px 1fr; border-bottom: 1px solid #e8edf2; padding: 10px 0; gap: 16px; }
+dt { font-weight: bold; }
+dd { margin: 0; }
+h4 { margin: 30px 0 15px; font-size: 18px; }
+.photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.photo-grid img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border: 1px solid #e0e6ed; border-radius: 6px; }
+.replace-note { font-size: 12px; color: #7b8796; }
+
+/* リンクとフッター */
+.link-section { text-align: center; }
+.link-section h2 { border: 0; padding: 0; }
+.link-section p { margin-bottom: 25px; }
+footer { background: #2c3950; color: white; text-align: center; padding: 23px 0; font-size: 12px; }
+
+/* スマホ表示 */
+@media (max-width: 700px) {
+  .header-inner { display: block; padding: 16px 0; }
+  .site-name { display: block; margin-bottom: 8px; }
+  nav { gap: 15px; }
+  .hero { grid-template-columns: 1fr; gap: 28px; min-height: 0; padding: 58px 0; }
+  .hero-note { transform: none; }
+  .section { padding: 58px 0; }
+  .about-box { grid-template-columns: 1fr; padding: 23px; gap: 18px; }
+  .avatar { width: 90px; height: 90px; font-size: 45px; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .work-card { padding: 20px; }
+  .work-details > div { grid-template-columns: 1fr; gap: 2px; }
+}
